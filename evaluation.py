@@ -48,6 +48,7 @@ def generate_pr(saw_image_dir, pixel_labels_dir, splits_dir, out_dir,
     """
     bl_names_dic = {
         'baseline_reflectance': 'Constant R',
+        'lettry2018_siamese': '[Ours]',
         'zhou2015_reflprior': '[Zhou et al. 2015]',
         'bell2014_densecrf': '[Bell et al. 2014]',
         'grosse2009_color_retinex': 'Color Retinex',
@@ -55,7 +56,7 @@ def generate_pr(saw_image_dir, pixel_labels_dir, splits_dir, out_dir,
         'zhao2012_nonlocal': '[Zhao et al. 2012]',
         'garces2012_clustering': '[Garces et al. 2012]',
         'shen2011_optimization': '[Shen et al. 2011]',
-        'saw_pixelnet': 'SAW Pixelnet',
+        'saw_pixelnet': '[Kovacs et al. 2017]',
     }
 
     rootdir = os.path.join(out_dir, gen_class_weights_str(class_weights))
